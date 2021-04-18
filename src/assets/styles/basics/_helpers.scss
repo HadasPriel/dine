@@ -1,0 +1,89 @@
+// flex helpers
+
+.flex {
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-start {
+        justify-content: flex-start;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.space-between {
+        justify-content: space-between;
+    }
+    &.flex-end {
+        align-items: flex-end;
+    }
+    &.flex-start {
+        align-items: flex-start;
+    }
+    // &.reverse {
+    //     flex-direction: row-reverse;
+    // }
+}
+
+.logo {
+    height: 40px;
+    width: 130px;
+}
+
+.dark {
+    background-color: #17192b;
+    color: #ffffff;
+}
+
+.txt-info {
+    width: unset;
+    text-align: center;
+    h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .thin-decoration {
+        transform: translate(50%);
+    }
+    @include for-normal-layout {
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    @include for-wide-layout {
+        width: 445px;
+
+        text-align: start;
+        .thin-decoration {
+            transform: none;
+        }
+    }
+}
+
+.main-layout {
+    max-width: 320px;
+    margin: auto;
+
+    @include for-narrow-layout {
+        max-width: 550px;
+    }
+    @include for-normal-layout {
+        max-width: 720px;
+    }
+    @include for-wide-layout {
+        max-width: 1200px;
+    }
+}

@@ -1,0 +1,27 @@
+.make-reservation {
+    padding: 80px;
+    background-image: url(../../img/homepage/ready-bg-desktop.jpg);
+    background-size: cover;
+    object-fit: cover;
+    .make-reservation-content {
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    @include for-normal-layout {
+        h3 {
+            font-size: 40px;
+        }
+    }
+    @include for-wide-layout {
+        .make-reservation-content {
+            flex-direction: row;
+            h3 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

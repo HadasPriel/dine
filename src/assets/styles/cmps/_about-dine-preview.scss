@@ -1,0 +1,58 @@
+.about-dine-preview {
+    flex-direction: column;
+    position: static;
+    padding-bottom: 50px;
+    &:first-of-type {
+        padding-bottom: 120px;
+    }
+    &.forward {
+        .bold-decoration {
+            left: 0;
+            border-top-right-radius: 2em;
+        }
+    }
+    &.reverse {
+        .bold-decoration {
+            right: 0;
+            border-top-left-radius: 2em;
+            bottom: 0;
+        }
+    }
+    img {
+        position: relative;
+        top: -70px;
+        width: 100%;
+        // max-width: 327px;
+        height: 400px;
+        object-fit: cover;
+    }
+    @include for-normal-layout {
+        padding-bottom: 125px;
+
+        img {
+            width: 573px;
+            height: 360px;
+        }
+    }
+    @include for-wide-layout {
+        flex-direction: row;
+        padding-bottom: 0;
+
+        &.reverse {
+            flex-direction: row-reverse;
+            img {
+                bottom: -80px;
+            }
+        }
+
+        &.forward {
+            img {
+                top: -70px;
+            }
+        }
+        img {
+            width: 540px;
+            height: 720px;
+        }
+    }
+}

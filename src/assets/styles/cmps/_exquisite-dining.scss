@@ -1,0 +1,53 @@
+.exquisite-dining {
+    background-image: url(./../../img/homepage/hero-bg-mobile.jpg);
+    background-size: cover;
+    padding-top: 225px;
+    padding-bottom: 150px;
+    text-align: center;
+
+    img {
+        margin-top: 65px;
+    }
+    .txt {
+        margin: 140px auto 30px;
+        width: unset;
+        h1 {
+            font-family: spartan-300;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.8px;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        p {
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+    }
+    @include for-normal-layout {
+        padding-top: 380px;
+        h1 {
+            font-size: 48px;
+            line-height: 64px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    @include for-wide-layout {
+        text-align: start;
+        background-image: url(./../../img/homepage/hero-bg-desktop.jpg);
+        padding-top: 0;
+        padding-bottom: 200px;
+
+        .txt {
+            // margin: 140px 0 200px 0;
+            margin: unset;
+            width: 525px;
+        }
+        h1 {
+            font-size: 64px;
+            line-height: 72px;
+        }
+    }
+}

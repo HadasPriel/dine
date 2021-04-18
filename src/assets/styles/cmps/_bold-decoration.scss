@@ -1,0 +1,10 @@
+.bold-decoration {
+    display: none;
+    position: absolute;
+    background-color: rgba(92, 103, 121, 0.08);
+    width: 895px;
+    height: 320px;
+    @include for-wide-layout {
+        display: block;
+    }
+}

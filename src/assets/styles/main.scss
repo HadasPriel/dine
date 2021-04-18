@@ -1,0 +1,25 @@
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+@import "setup/typography";
+
+// Basics
+@import "basics/helpers";
+@import "basics/base";
+
+// Components
+@import "cmps/exquisite-dining";
+@import "cmps/about-dine";
+@import "cmps/about-dine-preview";
+@import "cmps/highlights";
+@import "cmps/highlights-preview";
+@import "cmps/family";
+@import "cmps/make-reservation";
+@import "cmps/app-footer";
+
+@import "cmps/thin-decoration";
+@import "cmps/bold-decoration";
+@import "cmps/stripes-decoration";
+
+// pages

@@ -1,0 +1,22 @@
+.thin-decoration {
+    width: 80px;
+    margin: auto;
+    margin-bottom: 50px;
+    .circle {
+        width: 7px;
+        height: 7px;
+        background: none;
+        border: 1px solid #9e7f66;
+        border-radius: 2em;
+        margin-right: 7px;
+    }
+    .line {
+        width: 56px;
+        height: 1px;
+        background-color: #9e7f66;
+    }
+
+    @include for-wide-layout {
+        margin: 0 0 50px 0;
+    }
+}

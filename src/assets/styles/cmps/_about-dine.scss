@@ -1,0 +1,11 @@
+.about-dine {
+    position: relative;
+    width: 100%;
+    padding-bottom: 30px;
+    @include for-normal-layout {
+        padding-bottom: 0;
+    }
+    // @include for-wide-layout {
+    //     padding-bottom: 0;
+    // }
+}

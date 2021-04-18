@@ -1,0 +1,16 @@
+.stripes-decoration {
+    position: absolute;
+    z-index: 30;
+    top: -35px;
+    left: -40px;
+    .stripe {
+        background-color: #9e7f66;
+        width: 160px;
+        height: 6px;
+        margin-bottom: 8px;
+    }
+}
+
+.stripes-decor-container {
+    position: relative;
+}
