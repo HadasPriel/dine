@@ -19,7 +19,7 @@ export class RootCmp extends React.Component {
         return (
             <section>
 
-                <main className="app">
+                <main className="app ">
                     <Home />
                 </main>
                 <AppFooter />
